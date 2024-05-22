@@ -1,0 +1,32 @@
+[
+  {
+    "hatId": "01",
+    "name": "Toy Story",
+    "description": "Black hat with Toy Story characters around it",
+    "img": "https://scontent-atl3-2.xx.fbcdn.net/v/t1.18169-9/23755706_10155835930079144_5896085089628707663_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=jQpjqIUJj9wQ7kNvgHwO1mI&_nc_oc=AdjpDbpbagOamM0H2TTjN2HIruoSGPDgL1NYYoxPqk8w7wFUSvMTOPg7cWjEWpAOfTH2IpEI6QK63HVKtwkTtElp&_nc_ht=scontent-atl3-2.xx&oh=00_AYChbf6-R02OoFlzfy0TLyNXbEyMbYfABP9_5FDl5X8V2w&oe=6675B429",
+    "alt": "toy story hat",
+    "mainColor": "Black",
+    "type": "Snapback",
+    "className": "hat-pic"
+  },
+  {
+    "hatId": "02",
+    "name": "Stone Cold",
+    "description": "Black hat with Stone Cold logo on the front",
+    "img": "https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-9/42272761_10156624255229144_4672993262078787584_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=pWT6jsD8kNkQ7kNvgGq6h4T&_nc_ht=scontent-atl3-1.xx&oh=00_AYDs5h1c_BNQy4mVyNXTjxtLqEeIRrHSKL7KWZYxJGwBjQ&oe=6675B130",
+    "alt": "stone cold hat",
+    "mainColor": "Black",
+    "type": "Snapback",
+    "className": "hat-pic"
+  },
+  {
+    "hatId": "03",
+    "name": "Mario Bros",
+    "description": "Blue hat with first ever Mario level going around it",
+    "img": "https://scontent-atl3-1.xx.fbcdn.net/v/t1.18169-9/23843278_10155835930084144_3252477500346687389_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=aNEHUHr5Hd0Q7kNvgESzxRQ&_nc_ht=scontent-atl3-1.xx&oh=00_AYAbtOBvzrPkNuM5HsoVZ_7drUAgiaLnIRQiebs9lwb5gA&oe=6675A8C2",
+    "alt": "mario bros hat",
+    "mainColor": "Blue",
+    "type": "Snapback",
+    "className": "hat-pic"
+  }
+]
