@@ -28,5 +28,45 @@
     "mainColor": "Blue",
     "type": "Snapback",
     "className": "hat-pic"
+  },
+  {
+    "hatId": "04",
+    "name": "MTv",
+    "description": "Gray hat with classic green bill, and nostalgic MTv logo",
+    "img": "https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-9/71137446_10157485250799144_6291603974508249088_n.jpg?stp=dst-jpg_s552x414&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=1PhHaHXcGIMQ7kNvgEshK3d&_nc_ht=scontent-atl3-1.xx&oh=00_AYCFPWbHm4T4yO_ovQrv1-BFxFwCsTBp2YOUdB-gW6UGdA&oe=6675B7F8",
+    "alt": "MTv hat",
+    "mainColor": "Gray",
+    "type": "Snapback",
+    "className": "hat-pic"
+  },
+  {
+    "hatId": "05",
+    "name": "Chuckie",
+    "description": "Blue hat in the structure of Chuckie's outfit from the classic Rugrats episodes",
+    "img": "https://scontent-atl3-2.xx.fbcdn.net/v/t1.6435-9/71384942_10157485250944144_658983364870537216_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Jalok5FpWnkQ7kNvgEUsRea&_nc_ht=scontent-atl3-2.xx&oh=00_AYCVeQ06XFcaTiDeUka0vSrga44PNND47vXxCXBgLWI1WA&oe=6675F802",
+    "alt": "chuckie hat",
+    "mainColor": "Blue",
+    "type": "Snapback",
+    "className": "hat-pic"
+  },
+  {
+    "hatId": "06",
+    "name": "Reptar",
+    "description": "Green hat with an image of Reptar's face from Rugrats. #classic",
+    "img": "https://scontent-atl3-2.xx.fbcdn.net/v/t1.6435-9/70258926_10157485243859144_5935996754167070720_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=77NrCNrKrScQ7kNvgH-b1JC&_nc_ht=scontent-atl3-2.xx&oh=00_AYBwjol5qN_NkPE2OjoWN_-YrrdHC6yKOWoZtzPuWw36Yg&oe=66760083",
+    "alt": "reptar hat",
+    "mainColor": "Green",
+    "type": "Snapback",
+    "className": "hat-pic"
+  },
+  {
+    "hatId": "03",
+    "name": "Ouija",
+    "description": "Black hat with Ouija board on the bill and planchette as the logo",
+    "img": "https://scontent-atl3-1.xx.fbcdn.net/v/t1.18169-9/24059230_10155835933064144_3678401460151297944_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=7iSOHu6LMVUQ7kNvgG89_1u&_nc_ht=scontent-atl3-1.xx&oh=00_AYBq64_XHR7w-ga67Voac7sGmVhDBoioPhgrJTqbqAfLtg&oe=667609A1",
+    "alt": "ouija board hat",
+    "mainColor": "Black",
+    "type": "Snapback",
+    "className": "hat-pic"
   }
 ]

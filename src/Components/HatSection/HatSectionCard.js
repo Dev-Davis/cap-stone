@@ -15,7 +15,7 @@ function HatSectionCard(props) {
             <img className={hats.className} src={hats.img} alt={hats.alt} />
             <h5 className="card-text hat-type">{hats.type}</h5>
             <h5 className="card-text hat-color">{hats.mainColor}</h5>
-            <div className="col-6 offset-3">
+            <div className="col-10 offset-1">
             <p className="card-text hat-desc">{hats.description}</p>
           </div>
         </div>
