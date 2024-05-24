@@ -21,7 +21,7 @@
   margin: 1em;
   width:13em;
   background-color: black;
-  color: white;
+  /* color: white; */
   padding: 1em;
   border-radius: 1em 1em 1em 1em;
 }
@@ -29,6 +29,13 @@
 .hat-pic {
   height: 13em;
   width: 11em;
+  border: 2px solid red;
+  border-radius: 10%;
+}
+
+.modal-hat-pic {
+  /* height: 100%; */
+  width: 100%;
   border: 2px solid red;
   border-radius: 10%;
 }
@@ -43,6 +50,6 @@
   font-size: 14px;
 }
 
-/* .hat-desc, .hat-name {
-  margin: 0.4em 0 0.8em 0;
-} */
+.hat-details-btn {
+  margin-top: 1em;
+}

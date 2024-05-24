@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function CommentsCard() {
   return (
-    <div>CommentsCard</div>
-  )
+    <div className="comment-card">
+      <input type="text" />
+    </div>
+  );
 }
 
-export default CommentsCard
+export default CommentsCard;
