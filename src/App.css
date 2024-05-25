@@ -53,3 +53,18 @@
 .hat-details-btn {
   margin-top: 1em;
 }
+
+.comment-hr {
+  margin: 0.3em 0.3em;
+}
+
+.comment-input {
+  width: 100%;
+}
+
+.comment-card-box {
+  border: 1px solid black;
+  margin: 0.5em;
+  padding: 0.4em;
+  border-radius: 1em;
+}
