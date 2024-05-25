@@ -88,9 +88,8 @@ p {
   padding: 0;
 }
 
-.comment-header {
-  /* height: 1em; */
-  /* margin-bottom: 1em; */
+.comment-section {
+  font-size: 13px;
 }
 
 .input-comment {
@@ -101,9 +100,16 @@ p {
 
 .avi-name {
   display: flex;
-  /* align-items: baseline; */
+  padding-left: 0.5em;
 }
 
 .commenter-info {
   padding-left: 0.4em;
+  font-size: 12px;
+}
+
+.comment-date {
+  display: flex;
+  font-size: 12px;
+  padding-left: 0.5em;
 }
