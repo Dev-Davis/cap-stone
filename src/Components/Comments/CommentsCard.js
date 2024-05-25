@@ -1,7 +1,6 @@
 import React from "react";
 
 function CommentsCard(props) {
-<<<<<<< Updated upstream
   // const hatInfo = require("../../data/hats.json");
   // hatInfo.map((hat) => {
   //   return hat;
@@ -9,18 +8,6 @@ function CommentsCard(props) {
 
   const comments = props.comment;
   // console.log(comments);
-=======
-  const hatInfo = require("../../data/hats.json");
-
-  let hat;
-
-  hatInfo.map(() => {
-    return hat;
-  });
-
-  const comments = props.comment;
-  // console.log(hat);
->>>>>>> Stashed changes
   return (
     <div className="comment-card container">
       <section className="comment-card-box">
