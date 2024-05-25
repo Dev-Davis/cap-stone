@@ -74,6 +74,8 @@ p {
 }
 
 .commenter-img {
+  display: flex;
+  align-items: center;
   height: 1.4em;
   width: 1.4em;
   border-radius: 50%;
@@ -95,4 +97,13 @@ p {
   display: flex;
   align-items: center;
   padding: 0;
+}
+
+.avi-name {
+  display: flex;
+  /* align-items: baseline; */
+}
+
+.commenter-info {
+  padding-left: 0.4em;
 }

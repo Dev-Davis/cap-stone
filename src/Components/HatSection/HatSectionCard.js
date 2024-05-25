@@ -89,7 +89,7 @@ function HatSectionCard(props) {
         // data-bs-target={hats.hatId}
         data-bs-toggle="modal"
       >
-        <p>Hat Details</p>
+        <p>{hats.name} Details</p>
       </button>
     </div>
   );
