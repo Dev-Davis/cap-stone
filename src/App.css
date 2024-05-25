@@ -1,14 +1,6 @@
-/* .App {
-  text-align: center;
-} */
-
-/* h1, h2, h3, h4, h5, h6, hr, p {
+p {
   margin: 0;
-} */
-
-/* .user-profile {
-  border: 1px solid black;
-} */
+}
 
 .user-img {
   height: 10em;
@@ -46,6 +38,10 @@
   border-radius: 3em;
 }
 
+.about-me-section {
+  padding: 0 2em;
+}
+
 .hat-desc {
   font-size: 14px;
 }
@@ -58,13 +54,41 @@
   margin: 0.3em 0.3em;
 }
 
+.separator {
+  margin: 0;
+}
+
 .comment-input {
   width: 100%;
 }
 
 .comment-card-box {
   border: 1px solid black;
-  margin: 0.5em;
+  margin-top: 0.9em;
   padding: 0.4em;
   border-radius: 1em;
+}
+
+.commenter-img {
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+}
+
+.input-title {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 0;
+}
+
+.comment-header {
+  /* height: 1em; */
+  /* margin-bottom: 1em; */
+}
+
+.input-comment {
+  display: flex;
+  align-items: center;
+  padding: 0;
 }
