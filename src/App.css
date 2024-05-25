@@ -39,11 +39,15 @@ p {
 }
 
 .about-me-section {
-  padding: 0 2em;
+  padding: 0 2em 0.6em 2em;
 }
 
 .hat-desc {
   font-size: 14px;
+}
+
+.hat-holder {
+  margin-top: 1.2em;
 }
 
 .hat-details-btn {

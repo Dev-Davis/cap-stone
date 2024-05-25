@@ -6,13 +6,15 @@ function HatSection() {
 
   return (
     <div className="container">
-      <div className="row">
-        {/* <div className="col"> */}
+      <section className="hat-holder">
+        <div className="row">
+          {/* <div className="col"> */}
           {hats.map((hat) => (
-            <HatSectionCard key={hat.userId} hats={hat} />
+            <HatSectionCard key={hat.hatId} hats={hat} />
           ))}
-        {/* </div> */}
-      </div>
+          {/* </div> */}
+        </div>
+      </section>
     </div>
   );
 }
