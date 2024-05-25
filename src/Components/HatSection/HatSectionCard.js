@@ -4,10 +4,22 @@ import Comments from "../Comments/Comments";
 function HatSectionCard(props) {
   const hats = props.hats;
 
+  const hatsArray = require("../../data/hats.json");
+
+
+  // console.log(hatsArray);
+
+  const findHat = () => {
+    let cap = hatsArray.find(({hatId}) => hatId === hats.hatId)
+    console.log(cap)
+    return cap;
+  }
+
+
   return (
     <div className="col hat-card text-center">
       <div className="text-center">
-        <div className="card" ref={hats.id}>
+        <div className="card">
           <div className="card-body">
             <h3 className="card-title hat-name">{hats.name}</h3>
             <img className={hats.className} src={hats.img} alt={hats.alt} />
@@ -20,6 +32,7 @@ function HatSectionCard(props) {
       <div
         className="modal fade"
         id="exampleModalToggle"
+        // id={hats.hatId}
         aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel"
         tabindex="-1"
@@ -70,11 +83,13 @@ function HatSectionCard(props) {
       >
       </div>
       <button
+        onClick={findHat}
         className="btn btn-dark hat-details-btn"
         data-bs-target="#exampleModalToggle"
+        // data-bs-target={hats.hatId}
         data-bs-toggle="modal"
       >
-        <p>Hat Details</p>
+        <p>{hats.name} Details</p>
       </button>
     </div>
   );

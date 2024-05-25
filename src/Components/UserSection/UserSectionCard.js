@@ -2,7 +2,7 @@ import React from "react";
 
 function UserSectionCard(props) {
   const user = props.user;
-  console.log(user);
+  
   return (
     // <div className="user-profile">
       <div className="row">

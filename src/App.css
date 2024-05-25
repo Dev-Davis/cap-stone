@@ -39,11 +39,15 @@ p {
 }
 
 .about-me-section {
-  padding: 0 2em;
+  padding: 0 2em 0.6em 2em;
 }
 
 .hat-desc {
   font-size: 14px;
+}
+
+.hat-holder {
+  margin-top: 1.2em;
 }
 
 .hat-details-btn {
@@ -70,6 +74,8 @@ p {
 }
 
 .commenter-img {
+  display: flex;
+  align-items: center;
   height: 1.4em;
   width: 1.4em;
   border-radius: 50%;
@@ -91,4 +97,13 @@ p {
   display: flex;
   align-items: center;
   padding: 0;
+}
+
+.avi-name {
+  display: flex;
+  /* align-items: baseline; */
+}
+
+.commenter-info {
+  padding-left: 0.4em;
 }
