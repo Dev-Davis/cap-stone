@@ -2,10 +2,7 @@ import React from "react";
 
 function UserSectionCard(props) {
   const user = props.user;
-<<<<<<< Updated upstream
-=======
   
->>>>>>> Stashed changes
   return (
     // <div className="user-profile">
       <div className="row">
