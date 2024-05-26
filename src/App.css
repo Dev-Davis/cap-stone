@@ -113,3 +113,8 @@ p {
   font-size: 12px;
   padding-left: 0.5em;
 }
+
+.friends {
+  border: 1px solid black;
+  margin-top: 2em;
+}
