@@ -8,11 +8,9 @@ function HatSection() {
     <div className="container">
       <section className="hat-holder">
         <div className="row">
-          {/* <div className="col"> */}
           {hats.map((hat) => (
             <HatSectionCard key={hat.hatId} hats={hat} />
           ))}
-          {/* </div> */}
         </div>
       </section>
     </div>

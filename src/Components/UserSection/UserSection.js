@@ -4,7 +4,7 @@ import UserSectionCard from "./UserSectionCard";
 function UserSection() {
   const users = require("../../data/user.json");
 
-  return <div className="container">
+  return <div className="user-section container">
     {users.map((user) => (
       <UserSectionCard key={user.userId} user={user} />
     ))}
