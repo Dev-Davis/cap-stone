@@ -2,8 +2,13 @@ p {
   margin: 0;
 }
 
-.user-section {
+.cover-photo {
+  /* height: 27em; */
+}
 
+.user-username {
+  border: 1px solid black;
+  margin-top: 0.8em;
 }
 
 .user-img {
@@ -148,4 +153,8 @@ p {
 
 .selection-type {
   margin-top: 0.7em;
+}
+
+.navbar {
+  border-bottom: 1px solid black;
 }
