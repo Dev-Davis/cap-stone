@@ -2,6 +2,10 @@ p {
   margin: 0;
 }
 
+.user-section {
+
+}
+
 .user-img {
   height: 10em;
   border: 1px solid black;
@@ -40,6 +44,7 @@ p {
 
 .about-me-section {
   padding: 0 2em 0.6em 2em;
+  font-size: 13px;
 }
 
 .hat-desc {
@@ -52,6 +57,13 @@ p {
 
 .hat-details-btn {
   margin-top: 1em;
+  font-size: 12px;
+}
+
+.hat-submit {
+  /* border: 1px solid black; */
+  margin-top: 2em;
+  padding: em;
 }
 
 .comment-hr {
@@ -116,5 +128,24 @@ p {
 
 .friends {
   border: 1px solid black;
-  margin-top: 2em;
+  margin-top: 1em;
+}
+
+.hat-title {
+  margin: 0.4em 0;
+  width: 80%;
+  border-radius: 0.4em;
+}
+
+.hat-type-dropdown {
+
+}
+
+.submission-form {
+  border: 1px solid black;
+  padding: 1em;
+}
+
+.selection-type {
+  margin-top: 0.7em;
 }

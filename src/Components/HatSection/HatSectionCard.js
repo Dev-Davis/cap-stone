@@ -35,7 +35,7 @@ function HatSectionCard(props) {
         // id={hats.hatId}
         aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel"
-        tabindex="-1"
+        tabIndex="-1"
       >
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
@@ -79,7 +79,7 @@ function HatSectionCard(props) {
         id="exampleModalToggle2"
         aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel2"
-        tabindex="-1"
+        tabIndex="-1"
       >
       </div>
       <button
@@ -89,7 +89,7 @@ function HatSectionCard(props) {
         // data-bs-target={hats.hatId}
         data-bs-toggle="modal"
       >
-        <p>{hats.name} Details</p>
+        <p className="hat-details">{hats.name} Details</p>
       </button>
     </div>
   );
