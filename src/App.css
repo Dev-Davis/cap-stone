@@ -2,8 +2,8 @@ p {
   margin: 0;
 }
 
-.cover-photo {
-  /* height: 27em; */
+.nav-links {
+  display: flex;
 }
 
 .user-username {
@@ -157,4 +157,8 @@ p {
 
 .navbar {
   border-bottom: 1px solid black;
+}
+
+.m-d {
+  font-size: 13px;
 }

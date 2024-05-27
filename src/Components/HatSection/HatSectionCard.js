@@ -1,4 +1,5 @@
 import React from "react";
+import * as bootstrap from "bootstrap";
 import Comments from "../Comments/Comments";
 
 function HatSectionCard(props) {
@@ -6,8 +7,10 @@ function HatSectionCard(props) {
 
   const hatsArray = require("../../data/hats.json");
 
-
-  // console.log(hatsArray);
+  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
 
   const findHat = () => {
     let cap = hatsArray.find(({hatId}) => hatId === hats.hatId)
@@ -59,10 +62,13 @@ function HatSectionCard(props) {
                       src={hats.img}
                       alt={hats.alt}
                     />
+                    <p>Type:</p>
                     <h5 className="card-text hat-type">{hats.type}</h5>
+                    <p>Color:</p>
                     <h5 className="card-text hat-color">{hats.mainColor}</h5>
                     <div className="col-10 offset-1">
-                      <p className="card-text hat-desc">{hats.description}</p>
+                      {/* <p className="card-text hat-desc">{hats.description}</p> */}
+                      <button type="button" className="btn btn-lg btn-light m-d" data-bs-toggle="popover" title={hats.name.toString()} data-bs-content={hats.description}>Click for description</button>
                     </div>
                   </div>
                 </div>
