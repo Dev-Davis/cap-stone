@@ -8,10 +8,10 @@ function Comments() {
     <div className="comments container">
       <section className="comment-header">
         <div className="row">
-          <div className="col-3 input-title">
+          <div className="col-4 input-title">
             <p>Leave a comment:</p>
           </div>
-          <div className="col-9 input-comment">
+          <div className="col input-comment">
             <input
               type="text"
               className="comment-input"
