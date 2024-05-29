@@ -162,3 +162,11 @@ p {
 .m-d {
   font-size: 13px;
 }
+
+.modal-hr {
+  margin: 0.5em;
+}
+
+.show-detail-btn {
+  display: flex;
+}
