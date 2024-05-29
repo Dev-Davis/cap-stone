@@ -1,22 +1,37 @@
-import React from "react";
-import * as bootstrap from "bootstrap";
-import Comments from "../Comments/Comments";
+import React, { useState } from "react";
+import { Modal, Button } from 'react-bootstrap'
+
+// import Comments from "../Comments/Comments";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function HatSectionCard(props) {
+  const [show, setShow] = useState(false);
+  let [cap, setCap] = useState({})
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => {
+    cap = hatsArray.find(({hatId}) => hatId === hats.hatId)   
+    
+    console.log(cap.name);
+
+    setShow(true);
+  }
+
   const hats = props.hats;
 
   const hatsArray = require("../../data/hats.json");
 
-  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl)
-})
+//   var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+// var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+//   return new bootstrap.Popover(popoverTriggerEl)
+// })
 
-  const findHat = () => {
-    let cap = hatsArray.find(({hatId}) => hatId === hats.hatId)
-    console.log(cap)
-    return cap;
-  }
+
+  // const findHat = () => {
+  //   console.log(cap)
+  //   return cap;
+  // }
 
 
   return (
@@ -32,7 +47,28 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 
       {/* Modal */}
 
-      <div
+      <Button variant="primary" onClick={handleShow}>
+        Launch Bootstrap Modal
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+
+        <Modal.Header closeButton>
+          <Modal.Title>{cap.name}</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>Modal content will sit here</Modal.Body>
+
+        <Modal.Footer>
+
+          <Button variant="secondary" onClick={handleClose}>Close</Button>
+          <Button variant="primary" onClick={handleClose}>Submit</Button>
+
+        </Modal.Footer>
+
+      </Modal>
+
+      {/* <div
         className="modal fade"
         id="exampleModalToggle"
         // id={hats.hatId}
@@ -68,7 +104,7 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
                     <h5 className="card-text hat-color">{hats.mainColor}</h5>
                     <div className="col-10 offset-1">
                       {/* <p className="card-text hat-desc">{hats.description}</p> */}
-                      <button type="button" className="btn btn-lg btn-light m-d" data-bs-toggle="popover" title={hats.name.toString()} data-bs-content={hats.description}>Click for description</button>
+                      {/* <button type="button" className="btn btn-lg btn-light m-d" data-bs-toggle="popover" title={hats.name.toString()} data-bs-content={hats.description}>Click for description</button>
                     </div>
                   </div>
                 </div>
@@ -96,7 +132,7 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
         data-bs-toggle="modal"
       >
         <p className="hat-details">{hats.name} Details</p>
-      </button>
+      </button> */} */}
     </div>
   );
 }
