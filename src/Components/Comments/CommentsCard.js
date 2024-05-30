@@ -20,7 +20,7 @@ function CommentsCard(props) {
                 className="commenter-img"
               />
             </div>
-            <div className="col-1">
+            <div className="col-3">
               <p className="commenter-info">user</p>
             </div>
           </div>

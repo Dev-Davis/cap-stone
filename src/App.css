@@ -80,7 +80,7 @@ p {
 }
 
 .comment-input {
-  width: 100%;
+  /* width: 26em; */
 }
 
 .comment-card-box {
@@ -105,6 +105,14 @@ p {
   padding: 0;
 }
 
+.for-input {
+  margin: 0;
+}
+
+.comment-title {
+  margin: 0.3em;
+}
+
 .comment-section {
   font-size: 13px;
 }
@@ -117,12 +125,13 @@ p {
 
 .avi-name {
   display: flex;
-  padding-left: 0.5em;
+  align-items: center;
 }
 
 .commenter-info {
-  padding-left: 0.4em;
-  font-size: 12px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
 }
 
 .comment-date {
@@ -167,6 +176,8 @@ p {
   margin: 0.5em;
 }
 
-.show-detail-btn {
+.comment-body {
   display: flex;
+  justify-content: center;
 }
+
