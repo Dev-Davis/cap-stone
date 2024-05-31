@@ -7,9 +7,7 @@ export default function Navbar() {
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand">
-            CapStone
-          </a>
+          <a class="navbar-brand">CapStone</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -67,12 +65,13 @@ export default function Navbar() {
               </li>
               <li class="nav-item">
                 <Link
-                  class="nav-link disabled"
+                  to="login"
+                  class="nav-link"
                   href="#"
                   tabindex="-1"
                   aria-disabled="true"
                 >
-                  Disabled
+                  Logout
                 </Link>
               </li>
             </ul>
