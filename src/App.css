@@ -116,8 +116,12 @@ p {
 }
 
 .avi-name {
-  display: flex;
   padding-left: 0.5em;
+}
+
+.user-info-row {
+  display: flex;
+  align-items: center;
 }
 
 .commenter-info {

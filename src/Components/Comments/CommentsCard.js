@@ -9,14 +9,14 @@ function CommentsCard(props) {
       <section className="comment-card-box">
         <section className="avi-name">
           <div className="row">
-            <div className="col-2">
+            <div className="col user-info-row">
               <img
                 src="https://i.ytimg.com/vi/4dWg2U29CQM/maxresdefault.jpg"
                 alt="roma-army"
                 className="commenter-img"
               />
             </div>
-            <div className="col-1">
+            <div className="col user-info-row">
               <p className="commenter-info">user</p>
             </div>
           </div>

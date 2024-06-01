@@ -7,7 +7,7 @@ function Comments(props) {
   const hId = props.hatId;
 
   // ***** methods ***** //
-  const hatFilter = comments.filter((filt) => filt.hatId == hId);
+  const hatFilter = comments.filter((filt) => filt.hatId === hId);
 
   const hatMap = hatFilter.map((map) => (
     <CommentsCard key={map.id} comments={map} />
