@@ -16,7 +16,6 @@ function CommentsCard(props) {
                 className="commenter-img"
               />
             </div>
-            <div className="col user-info-row">
               <p className="commenter-info">user</p>
             </div>
           </div>

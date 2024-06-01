@@ -19,19 +19,23 @@ function Comments(props) {
   };
 
   return (
-    <div className="comments container">
-      <section className="comment-header">
+    <div className="comments container-fluid">
+      <section className="comment-body">
         <div className="row">
-          <div className="col-4 input-title">
-            <p>Leave a comment:</p>
+          <div className="input-title">
+            <section className="leave-comment-section">
+              <p className="comment-title col">Comment?</p>
+            </section>
           </div>
-          <div className="col input-comment">
+        </div>
+        <div className="row">
+          <section className="comment-section">
             <input
               type="text"
-              className="comment-input"
+              className="comment-input col"
               placeholder="Talk about this hat..."
             />
-          </div>
+          </section>
         </div>
       </section>
       <hr span="separator" />

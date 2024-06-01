@@ -1,19 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 
 function HatSubmitForm() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   return (
     <div className="hat-submit container text-center">
       <div className="row">
         <section className="submission-form col-6 offset-3">
           <h5>Add to your collection!!!</h5>
           <form>
-            <p>Enter hat name</p>
+          <hr />
+            <input
+              type="file"
+              name="myImage"
+              // Event handler to capture file selection and update the state
+              onChange={(event) => {
+                console.log(event.target.files[0]); // Log the selected file
+                setSelectedImage(event.target.files[0]); // Update the state with the selected file
+              }}
+            />
+            <hr />
+            <p className="for-input">Enter hat name</p>
             <input className="hat-title" placeholder="  Enter name..." />
             <br />
-            <p>Enter hat description</p>
+            <p className="for-input">Enter hat description</p>
             <input className="hat-title" placeholder="  Enter main color..." />
             <br />
-            <p>Enter hat color</p>
+            <p className="for-input">Enter hat color</p>
             <input className="hat-title" placeholder="  Enter description..." />
             <br />
             {/* <p>Enter hat name</p> */}
