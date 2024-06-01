@@ -8,7 +8,11 @@ function Comments(props) {
 
   const hatFilter = comments.filter((filt) => filt.hatId == hId);
 
-  console.log(hatFilter)
+  const hatMap = hatFilter.map((map) => (
+    console.log(map)
+  ))
+
+  console.log(hatMap)
 
   const noComments = () => {
     return <h3>No comments yet</h3>;
