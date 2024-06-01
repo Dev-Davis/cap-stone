@@ -1,8 +1,18 @@
 import React from "react";
 import CommentsCard from "./CommentsCard";
 
-function Comments() {
+function Comments(props) {
   const comments = require("../../data/comments.json");
+
+  const hId = props.hatId;
+
+  const hatFilter = comments.filter((filt) => filt.hatId == hId);
+
+  console.log(hatFilter)
+
+  const noComments = () => {
+    return <h3>No comments yet</h3>;
+  };
 
   return (
     <div className="comments container">
@@ -20,11 +30,9 @@ function Comments() {
           </div>
         </div>
       </section>
-      <hr span="separator"/>
+      <hr span="separator" />
       <section className="comment-reader">
-        {comments.map((comment) => (
-          <CommentsCard key={comment.id} comment={comment} />
-        ))}
+        {hId ? "works" : noComments() }
       </section>
     </div>
   );
