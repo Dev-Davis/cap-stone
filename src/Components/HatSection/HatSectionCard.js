@@ -15,8 +15,6 @@ function HatSectionCard(props) {
     cap = hatsArray.find(({ hatId }) => hatId === hats.hatId);
     setCap(cap);
 
-    console.log(cap);
-
     setShow(true);
   };
 
@@ -66,17 +64,17 @@ function HatSectionCard(props) {
             </section>
             <hr className="modal-hr"></hr>
             <section className="img-section">
-            <h6>Color:</h6>
-            <p className="card-text hat-color hat-desc">{hats.mainColor}</p>
+              <h6>Color:</h6>
+              <p className="card-text hat-color hat-desc">{hats.mainColor}</p>
             </section>
             <hr className="modal-hr"></hr>
             <section className="img-section">
-            <h6>Description:</h6>
+              <h6>Description:</h6>
               <p className="card-text hat-desc">{hats.description}</p>
             </section>
-              <div className="modal-footer text-center">
-                <Comments />
-              </div>
+            <div className="modal-footer text-center">
+              <Comments />
+            </div>
           </section>
         </Modal.Body>
 

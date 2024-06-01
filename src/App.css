@@ -181,3 +181,15 @@ p {
   justify-content: center;
 }
 
+.home-search {
+  margin: 0.6em;
+}
+
+.logout {
+  padding: 1em;
+}
+
+.search-text {
+  margin: 0;
+}
+
