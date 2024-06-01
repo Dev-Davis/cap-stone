@@ -11,13 +11,13 @@ export default function Home() {
       </section>
       <hr />
       <section>
-        <section className="search-tite  text-center">
+        <section className="search-title text-center">
         <p className="search-text">Find your favorite hat:</p>
         </section>
         <section className="home-search">
           <form class="d-flex">
             <input
-              class="form-control me-2"
+              class="form-control me-2 search-border"
               type="search"
               placeholder="Search....."
               aria-label="Search"

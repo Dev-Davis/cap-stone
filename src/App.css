@@ -193,3 +193,7 @@ p {
   margin: 0;
 }
 
+.search-border {
+  border-radius: 2em;
+}
+

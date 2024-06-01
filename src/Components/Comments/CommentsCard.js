@@ -1,13 +1,8 @@
 import React from "react";
 
 function CommentsCard(props) {
-  // const hatInfo = require("../../data/hats.json");
-  // hatInfo.map((hat) => {
-  //   return hat;
-  // });
-
   const comments = props.comment;
-  // console.log(comments);
+  // console.log(props)
   return (
     <div className="comment-card container">
       <section className="comment-card-box">

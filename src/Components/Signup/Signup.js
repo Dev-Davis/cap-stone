@@ -1,24 +1,6 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
 
-// import "firebase/auth";
-// import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
-
-// // ***** signup ***** //
-// const auth = getAuth();
-// createUserWithEmailAndPassword(auth)
-//   .then((userCredential) => {
-//     // Signed up 
-//     const user = userCredential.user;
-    
-//   })
-//   .catch((error) => {
-//     const errorCode = error.code;
-//     const errorMessage = error.message;
-//     // ..
-//   });
-
-
 function Signup() {
   return (
     <div className="Auth text-center">

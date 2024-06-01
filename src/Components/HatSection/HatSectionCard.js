@@ -9,28 +9,24 @@ function HatSectionCard(props) {
   const [show, setShow] = useState(false);
   let [cap, setCap] = useState({});
 
+  const hats = props.hats;
+
   const handleClose = () => setShow(false);
 
   const handleShow = () => {
     cap = hatsArray.find(({ hatId }) => hatId === hats.hatId);
-    setCap(cap);
 
+    setCap(cap);
     setShow(true);
   };
 
-  const hats = props.hats;
+  
+  const getComments = () => {
+      return <Comments hatId={hats.hatId} />
+  }
+
 
   const hatsArray = require("../../data/hats.json");
-
-  //   var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-  // var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  //   return new bootstrap.Popover(popoverTriggerEl)
-  // })
-
-  // const findHat = () => {
-  //   console.log(cap)
-  //   return cap;
-  // }
 
   return (
     <div className="col hat-card text-center">
@@ -73,7 +69,7 @@ function HatSectionCard(props) {
               <p className="card-text hat-desc">{hats.description}</p>
             </section>
             <div className="modal-footer text-center">
-              <Comments />
+              <Comments hatId={hats.hatId} />
             </div>
           </section>
         </Modal.Body>
@@ -82,9 +78,6 @@ function HatSectionCard(props) {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          {/* <Button variant="primary" onClick={handleClose}>
-            Submit
-          </Button> */}
         </Modal.Footer>
       </Modal>
     </div>
