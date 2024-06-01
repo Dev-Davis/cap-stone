@@ -3,7 +3,6 @@ import React from "react";
 function CommentsCard(props) {
 
   const comment = props.comments;
-  // console.log(comments);
 
   return (
     <div className="comment-card container">

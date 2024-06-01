@@ -2,16 +2,18 @@ import React from "react";
 import CommentsCard from "./CommentsCard";
 
 function Comments(props) {
+  // ***** variables ***** //
   const comments = require("../../data/comments.json");
-
   const hId = props.hatId;
 
+  // ***** methods ***** //
   const hatFilter = comments.filter((filt) => filt.hatId == hId);
 
   const hatMap = hatFilter.map((map) => (
     <CommentsCard key={map.id} comments={map} />
   ))
 
+  // ***** functions ***** //
   const noComments = () => {
     return <h3>No comments yet</h3>;
   };
