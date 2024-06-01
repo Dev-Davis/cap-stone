@@ -9,10 +9,8 @@ function Comments(props) {
   const hatFilter = comments.filter((filt) => filt.hatId == hId);
 
   const hatMap = hatFilter.map((map) => (
-    console.log(map)
+    <CommentsCard key={map.id} comments={map} />
   ))
-
-  console.log(hatMap)
 
   const noComments = () => {
     return <h3>No comments yet</h3>;
@@ -36,7 +34,7 @@ function Comments(props) {
       </section>
       <hr span="separator" />
       <section className="comment-reader">
-        {hId ? "works" : noComments() }
+        {hId ? hatMap : noComments() }
       </section>
     </div>
   );

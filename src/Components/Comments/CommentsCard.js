@@ -2,8 +2,9 @@ import React from "react";
 
 function CommentsCard(props) {
 
-  const comments = props.comment;
-  console.log(comments);
+  const comment = props.comments;
+  // console.log(comments);
+
   return (
     <div className="comment-card container">
       <section className="comment-card-box">
@@ -26,7 +27,7 @@ function CommentsCard(props) {
 
         <div className="row">
           <div className="col">
-            <section className="comment-section">{comments.comment}</section>
+            <section className="comment-section">{comment.comment}</section>
           </div>
         </div>
 
@@ -34,7 +35,7 @@ function CommentsCard(props) {
 
         <div className="row">
           <div className="col">
-            <section className="comment-date">{comments.date}</section>
+            <section className="comment-date">{comment.date}</section>
           </div>
         </div>
       </section>
