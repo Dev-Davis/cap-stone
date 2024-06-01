@@ -13,24 +13,14 @@ function HatSectionCard(props) {
 
   const handleShow = () => {
     cap = hatsArray.find(({ hatId }) => hatId === hats.hatId);
+    
     setCap(cap);
-
     setShow(true);
   };
 
   const hats = props.hats;
 
   const hatsArray = require("../../data/hats.json");
-
-  //   var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-  // var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  //   return new bootstrap.Popover(popoverTriggerEl)
-  // })
-
-  // const findHat = () => {
-  //   console.log(cap)
-  //   return cap;
-  // }
 
   return (
     <div className="col hat-card text-center">
@@ -73,7 +63,7 @@ function HatSectionCard(props) {
               <p className="card-text hat-desc">{hats.description}</p>
             </section>
             <div className="modal-footer text-center">
-              <Comments />
+              <Comments hatId={hats.hatId} />
             </div>
           </section>
         </Modal.Body>
