@@ -11,13 +11,13 @@ function CommentsCard(props) {
           <div className="row">
             <div className="col user-info-row">
               <img
-                src="https://i.ytimg.com/vi/4dWg2U29CQM/maxresdefault.jpg"
+                src={comment.userImg}
                 alt="roma-army"
                 className="commenter-img"
               />
-            </div>
-            <div>
-              <p className="commenter-info">user</p>
+            {/* </div>
+            <div> */}
+              <p className="commenter-info">{comment.userName}</p>
             </div>
           </div>
         </section>
