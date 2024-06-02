@@ -86,7 +86,7 @@ p {
 .comment-card-box {
   border: 1px solid black;
   margin-top: 0.9em;
-  padding: 0.4em;
+  padding: 0.6em;
   border-radius: 1em;
 }
 
@@ -124,18 +124,19 @@ p {
 }
 
 .avi-name {
-  padding-left: 0.5em;
+  margin: 0.1em;
+  display: flex;
+  align-items: baseline;
 }
 
 .user-info-row {
-  display: flex;
-  /* align-items: baseline; */
+  display: inline-flex;
 }
 
 .commenter-info {
+  margin: 0;
+  padding-left: 0.5em;
   font-size: 13px;
-  display: flex;
-  align-items: center;
 }
 
 .comment-date {

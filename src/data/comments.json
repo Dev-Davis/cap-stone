@@ -15,12 +15,16 @@
     "id": "03",
     "comment": "Theres's a snake in my boot",
     "date": "05-22-24",
-    "hatId": "h01"
+    "hatId": "h01",
+    "userImg": "https://i.ytimg.com/vi/4dWg2U29CQM/maxresdefault.jpg",
+    "userName": "Roma Army"
   },
   {
     "id": "04",
     "comment": "To infinity and beyond!",
     "date": "06-01-24",
-    "hatId": "h01"
+    "hatId": "h01",
+    "userImg": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D",
+    "userName": "Dan Wixler"
   }
 ]
