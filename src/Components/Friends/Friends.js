@@ -11,10 +11,12 @@ function Friends() {
   console.log(friends)
 
   const friendCount = friends.length;
+
+  // const displayFriends = () =>
   // const displayFriends = () => {
-    // const friendMap = friends.map((friend) => (
-    //   <FriendsCard key={friend.fId} friends={friend} />
-    // ))
+  //   const friendMap = friends.map((friend) => (
+  //     <FriendsCard key={friend.fId} friends={friend} />
+  //   ))
   // }
   return (
     <div className="friends container text-center">
@@ -22,7 +24,7 @@ function Friends() {
         <p>You have {friendCount} friends</p>
       </div>
       <div className="row">
-        {friends.map((friend) => (
+        {friends.slice(0,4).map((friend) => (
           <FriendsCard key={friend.fId} friends={friend} />
         ))}
         {/* {friends.length > 4 ? "Too many friends" : friendMap} */}

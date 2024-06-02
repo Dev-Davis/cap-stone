@@ -244,6 +244,7 @@ p {
 
 .friends {
   padding: 1em;
+  border-radius: 1.3em;
 }
 
 .friend-link {
@@ -254,4 +255,8 @@ p {
 .friend-link:hover {
   text-decoration: none;
   color: red;
+}
+
+.submission-form {
+  border-radius: 1.3em;
 }

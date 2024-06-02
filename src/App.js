@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -10,10 +11,17 @@ import Signup from "./Components/Signup/Signup";
 import FriendsDisplay from "./Components/Friends/FriendsDisplay";
 
 function App() {
+
+  let [user, setUser] = useState(false);
+
+  const userLogging = () => {
+    setUser(!user)
+  }
+
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
+        <Navbar  userLogging={userLogging} />
         <Routes>
           <Route exact path="/" Component={Home} />
           <Route exact path="/profile" Component={Profile} />
