@@ -7,7 +7,7 @@ export default function Navbar() {
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand">CapStone</a>
+          <div class="navbar-brand">CapStone</div>
           <button
             class="navbar-toggler"
             type="button"
