@@ -7,6 +7,7 @@ import Profile from "./Components/Profile/Profile";
 import Navbar from "./Components/Navbar/Navbar";
 import Login from "./Components/Login/Login";
 import Signup from "./Components/Signup/Signup";
+import FriendsDisplay from "./Components/Friends/FriendsDisplay";
 
 function App() {
   return (
@@ -16,8 +17,10 @@ function App() {
         <Routes>
           <Route exact path="/" Component={Home} />
           <Route exact path="/profile" Component={Profile} />
+          <Route exact path="/profile/:id" Component={Home} />
           <Route exact path="/login" Component={Login} />
           <Route exact path="/signup" Component={Signup} />
+          <Route exact path="/friends" Component={FriendsDisplay} />
         </Routes>
       </BrowserRouter>
     </div>
