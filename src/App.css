@@ -129,7 +129,7 @@ p {
 
 .user-info-row {
   display: flex;
-  align-items: center;
+  /* align-items: baseline; */
 }
 
 .commenter-info {

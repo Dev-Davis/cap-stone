@@ -9,13 +9,19 @@ function Comments(props) {
   // ***** methods ***** //
   const hatFilter = comments.filter((filt) => filt.hatId === hId);
 
+  // console.log(hatFilter[0].hatId)
+
   const hatMap = hatFilter.map((map) => (
     <CommentsCard key={map.id} comments={map} />
-  ))
+  ));
 
   // ***** functions ***** //
-  const noComments = () => {
-    return <h3>No comments yet</h3>;
+  let getComments = () => {
+    if (hatFilter.length !== 0) {
+      return hatMap;
+    } else {
+      return <h5>If you like it, say something 😊</h5>;
+    }
   };
 
   return (
@@ -33,15 +39,13 @@ function Comments(props) {
             <input
               type="text"
               className="comment-input col"
-              placeholder="Talk about this hat..."
+              placeholder=" Talk about this hat..."
             />
           </section>
         </div>
       </section>
       <hr span="separator" />
-      <section className="comment-reader">
-        {hId ? hatMap : noComments() }
-      </section>
+      <section className="comment-reader">{getComments()}</section>
     </div>
   );
 }
