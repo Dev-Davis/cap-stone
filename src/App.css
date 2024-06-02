@@ -48,8 +48,9 @@ p {
 }
 
 .about-me-section {
-  padding: 0 2em 0.6em 2em;
+  padding: 0 2em 0.1em 2em;
   font-size: 13px;
+  margin-bottom: 0.1em;
 }
 
 .hat-desc {
@@ -198,3 +199,59 @@ p {
   margin: 0;
 }
 
+.friend-list-pics {
+  height: 6em;
+  width: 6em;
+  border-radius:  50%;
+  border: 2px solid black;
+}
+
+.friend-list-pics:hover {
+  height: 6em;
+  width: 6em;
+  border-radius:  50%;
+  border: 2px solid red;
+}
+
+.friend-card-border {
+  padding: 1em;
+  border-radius: 2em;
+  /* margin: 0.1em; */
+}
+
+/* .friend-card-border:hover {
+  padding: 1em;
+  background-color: gray;
+  border: 2px solid black;
+} */
+
+.f-fname-display {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.friend-name-display {
+  margin: 0;
+}
+
+.friend-name-display:hover {
+  text-decoration: none;
+  color: red;
+  font-weight: 500;
+  margin: 0;
+}
+
+.friends {
+  padding: 1em;
+}
+
+.friend-link {
+  text-decoration: none;
+  color: black;
+}
+
+.friend-link:hover {
+  text-decoration: none;
+  color: red;
+}

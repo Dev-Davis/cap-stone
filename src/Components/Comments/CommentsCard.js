@@ -1,7 +1,6 @@
 import React from "react";
 
 function CommentsCard(props) {
-
   const comment = props.comments;
 
   return (
@@ -15,8 +14,6 @@ function CommentsCard(props) {
                 alt="roma-army"
                 className="commenter-img"
               />
-            {/* </div>
-            <div> */}
               <p className="commenter-info">{comment.userName}</p>
             </div>
           </div>
