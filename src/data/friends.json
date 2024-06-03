@@ -3,7 +3,7 @@
     "fId": "01",
     "fImg": "https://cdn.create.vista.com/api/media/small/414253724/stock-photo-young-man-squinting-while-touching-eyeglasses-isolated-grey",
     "fName": "Eric",
-    "isFriends": false,
+    "isFriends": true,
     "alt": "Eric's picture",
     "aboutMe": "Here's a little bit about me"
   },
@@ -43,7 +43,7 @@
     "fId": "06",
     "fImg": "https://images.unsplash.com/photo-1499887142886-791eca5918cd?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D",
     "fName": "Amber",
-    "isFriends": false,
+    "isFriends": true,
     "alt": "Amber's picture",
     "aboutMe": "Here's a little bit about me"
   },
