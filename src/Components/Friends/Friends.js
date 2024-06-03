@@ -16,13 +16,17 @@ function Friends() {
       ) : null
     );
 
+    const count = getFriends.filter(Boolean).length;
+
+    console.log(count)
+
   return (
     <div className="friends container text-center">
       <div className="row">
         <p>
           You have
           <Link to="/friends" className="friend-link">
-            <span className="friend-count"> {getFriends.length} </span>
+            <span className="friend-count"> {count} </span>
           </Link>
           friends
         </p>

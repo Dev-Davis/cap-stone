@@ -9,9 +9,9 @@ export default function FriendsDisplay() {
     <div className="friends-display-section container text-center">
       <div className="row">
         <h1>Friends Display</h1>
-        {friends.map((friend) => (
-          <FriendsDisplayList key={friend.fId} friend={friend} />
-        ))}
+        {friends.map((friend) => friend.isFriends === true ? (
+          <FriendsDisplayList key={friend.fId} friend={friend} /> 
+        ) : null)}
       </div>
     </div>
   );
