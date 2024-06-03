@@ -27,7 +27,7 @@ function HatSectionCard(props) {
         <div className="card">
           <div className="card-body">
             <h3 className="card-title hat-name text">{hats.name}</h3>
-            <img className={hats.className} src={hats.img} alt={hats.alt} />
+            <img className="hat-pic" src={hats.img} alt={hats.alt} onClick={handleShow} />
           </div>
         </div>
       </div>
@@ -35,9 +35,9 @@ function HatSectionCard(props) {
       
       {/* Modal */}
       <br />
-      <Button variant="dark" className="show-detail-btn" onClick={handleShow}>
+      {/* <Button variant="dark" className="show-detail-btn" onClick={handleShow}>
         Show Details
-      </Button>
+      </Button> */}
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>{cap.name}</Modal.Title>
