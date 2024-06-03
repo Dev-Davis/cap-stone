@@ -7,15 +7,13 @@ import FriendsCard from "./FriendsCard";
 const friends = require("../../data/friends.json");
 
 function Friends() {
-  const friendCount = friends.length;
-
   return (
     <div className="friends container text-center">
       <div className="row">
         <p>
           You have
           <Link to="/friends" className="friend-link">
-            <span className="friend-count">{" "}{friendCount}{" "}</span>
+            <span className="friend-count"> {friends.length} </span>
           </Link>
           friends
         </p>

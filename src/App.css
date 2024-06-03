@@ -111,7 +111,7 @@ p {
 }
 
 .comment-title {
-  margin: 0.3em;
+  padding-right: 2em;
 }
 
 .comment-section {
@@ -185,6 +185,7 @@ p {
 .comment-body {
   display: flex;
   justify-content: center;
+  align-items: baseline;
 }
 
 .home-search {
@@ -263,4 +264,10 @@ p {
 
 .friend-count {
   font-weight: 700;
+}
+
+.friend-list-img {
+  height: 10em;
+  width: 10em;
+  border-radius: 4em;
 }

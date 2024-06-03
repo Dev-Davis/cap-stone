@@ -1,8 +1,8 @@
+// ***** react imports ***** //
 import { useState } from "react";
-import "./App.css";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+// ***** component imports ***** //
 import Home from "./Components/Home/Home"
 import Profile from "./Components/Profile/Profile";
 import Navbar from "./Components/Navbar/Navbar";
@@ -11,10 +11,17 @@ import Signup from "./Components/Signup/Signup";
 import FriendsDisplay from "./Components/Friends/FriendsDisplay";
 import FriendProfile from "./Components/Friends/FriendProfile";
 
-function App() {
+// ***** CSS ***** //
+import "./App.css";
 
+// ***** data imprts ***** //
+
+
+function App() {
+  // ***** varaibles ***** //
   let [user, setUser] = useState(false);
 
+  // ***** functions ***** //
   const userLogging = () => {
     setUser(!user)
   }
