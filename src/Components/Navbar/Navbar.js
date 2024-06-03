@@ -6,7 +6,6 @@ export default function Navbar(props) {
 
   const user = props.user
   const loggedInNav = () => {
-    console.log(user)
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
@@ -85,7 +84,6 @@ export default function Navbar(props) {
   };
 
   const loggedOutNav = () => {
-    console.log(user)
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
@@ -107,7 +105,7 @@ export default function Navbar(props) {
 
   return (
     <div>
-     {!user === true ? loggedInNav() : loggedOutNav()}
+     {!user === false ? loggedInNav() : loggedOutNav()}
     </div>
   );
 }

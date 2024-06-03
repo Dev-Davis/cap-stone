@@ -5,13 +5,13 @@ import UserSection from '../UserSection/UserSection'
 
 const friends = require("../../data/friends.json");
 
-export default function FriendProfile() {
+export default function FriendProfile(props) {
   // ***** methods ***** //
   const id = useParams();
 
   // const friendId = friends.indexOf(id)
 
-  // console.log(friendId)
+  console.log(props)
 
   return (
     <div>
