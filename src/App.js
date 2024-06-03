@@ -14,11 +14,11 @@ import FriendProfile from "./Components/Friends/FriendProfile";
 // ***** CSS ***** //
 import "./App.css";
 
-// ***** data imprts ***** //
+// ***** data imports ***** //
 
 
 function App() {
-  // ***** varaibles ***** //
+  // ***** varibles ***** //
   let [user, setUser] = useState(false);
 
   // ***** functions ***** //

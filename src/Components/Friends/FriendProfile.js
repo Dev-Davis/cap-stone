@@ -1,21 +1,18 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
-
-import UserSection from '../UserSection/UserSection'
 
 const friends = require("../../data/friends.json");
 
-export default function FriendProfile(props) {
+export default function FriendProfile() {
   // ***** methods ***** //
-  const id = useParams();
+  const singleUser = friends.filter((x) => x.fId === '06')
 
-  // const friendId = friends.indexOf(id)
-
-  console.log(props)
+  // ***** variables ***** //
+  const solo = singleUser[0];
 
   return (
-    <div>
-      <UserSection />
+    <div className="container text-center">
+      <h1>{solo.fName}</h1>
+      <img src={solo.fImg} alt={solo.alt} className="solo-profile-img" />
     </div>
   )
 }
