@@ -38,6 +38,10 @@ p {
   border-radius: 10%;
 }
 
+.hat-pic:hover {
+  cursor: pointer;
+}
+
 .modal-hat-pic {
   /* height: 100%; */
   width: 100%;

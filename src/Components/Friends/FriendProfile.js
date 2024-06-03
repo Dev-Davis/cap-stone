@@ -13,6 +13,7 @@ export default function FriendProfile() {
     <div className="container text-center">
       <h1>{solo.fName}</h1>
       <img src={solo.fImg} alt={solo.alt} className="solo-profile-img" />
+      <p>{solo.aboutMe}</p> 
     </div>
   )
 }
