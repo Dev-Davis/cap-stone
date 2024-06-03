@@ -3,7 +3,6 @@ import React from "react";
 const friends = require("../../data/friends.json");
 
 export default function FriendsDisplayList(props) {
-  console.log(props);
 
   return (
     <div className="col-4">
