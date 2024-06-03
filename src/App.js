@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar  userLogging={userLogging} />
+        <Navbar  userLogging={userLogging} user={user} />
         <Routes>
           <Route exact path="/" Component={Home} />
           <Route exact path="/profile" Component={Profile} />

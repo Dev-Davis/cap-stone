@@ -19,7 +19,6 @@ function HatSectionCard(props) {
   };
 
   const hats = props.hats;
-
   const hatsArray = require("../../data/hats.json");
 
   return (
@@ -32,6 +31,8 @@ function HatSectionCard(props) {
           </div>
         </div>
       </div>
+
+      
       {/* Modal */}
       <br />
       <Button variant="dark" className="show-detail-btn" onClick={handleShow}>
@@ -62,9 +63,9 @@ function HatSectionCard(props) {
               <h6>Description:</h6>
               <p className="card-text hat-desc">{hats.description}</p>
             </section>
-            <div className="modal-footer text-center">
-              <Comments hatId={hats.hatId} />
-            </div>
+              <div className="modal-footer text-center">
+                <Comments hatId={hats.hatId} />
+              </div>
           </section>
         </Modal.Body>
 
@@ -72,9 +73,6 @@ function HatSectionCard(props) {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          {/* <Button variant="primary" onClick={handleClose}>
-            Submit
-          </Button> */}
         </Modal.Footer>
       </Modal>
     </div>

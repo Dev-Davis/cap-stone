@@ -260,3 +260,7 @@ p {
 .submission-form {
   border-radius: 1.3em;
 }
+
+.friend-count {
+  font-weight: 700;
+}

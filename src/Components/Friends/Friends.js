@@ -8,20 +8,12 @@ const friends = require("../../data/friends.json");
 
 function Friends() {  
 
-  console.log(friends)
-
   const friendCount = friends.length;
-
-  // const displayFriends = () =>
-  // const displayFriends = () => {
-  //   const friendMap = friends.map((friend) => (
-  //     <FriendsCard key={friend.fId} friends={friend} />
-  //   ))
-  // }
+ 
   return (
     <div className="friends container text-center">
       <div className="row">
-        <p>You have {friendCount} friends</p>
+        <p>You have <span className="friend-count">{friendCount}</span> friends</p>
       </div>
       <div className="row">
         {friends.slice(0,4).map((friend) => (

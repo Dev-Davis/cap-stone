@@ -4,15 +4,14 @@ import CommentsCard from "./CommentsCard";
 function Comments(props) {
   // ***** variables ***** //
   const comments = require("../../data/comments.json");
+
   const hId = props.hatId;
 
   // ***** methods ***** //
   const hatFilter = comments.filter((filt) => filt.hatId === hId);
 
-  // console.log(hatFilter[0].hatId)
-
   const hatMap = hatFilter.map((map) => (
-    <CommentsCard key={map.id} comments={map} />
+    <CommentsCard key={map.id} comments={map} commentId={map.leftById} />
   ));
 
   // ***** functions ***** //
@@ -20,7 +19,7 @@ function Comments(props) {
     if (hatFilter.length !== 0) {
       return hatMap;
     } else {
-      return <h5>If you like it, say something 😊</h5>;
+      return <h6>If you like it, say something 😊</h6>;
     }
   };
 

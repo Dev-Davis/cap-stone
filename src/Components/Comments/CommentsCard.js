@@ -1,7 +1,16 @@
 import React from "react";
+import { Link } from 'react-router-dom'
+
+const friends = require("../../data/friends.json");
 
 function CommentsCard(props) {
+  // ***** variables ***** //
   const comment = props.comments;
+
+  // ***** methods ***** //
+  const idInfo = friends.find(
+    (friendInfo) => friendInfo.fId === comment.leftById
+  );
 
   return (
     <div className="comment-card container">
@@ -9,12 +18,14 @@ function CommentsCard(props) {
         <section className="avi-name">
           <div className="row">
             <div className="col user-info-row">
-              <img
-                src={comment.userImg}
-                alt="roma-army"
-                className="commenter-img"
-              />
-              <p className="commenter-info">{comment.userName}</p>
+              <Link to="/profile/:id">
+                <img
+                  src={idInfo.fImg}
+                  alt="roma-army"
+                  className="commenter-img"
+                />
+              </Link>
+              <p className="commenter-info">{idInfo.fName}</p>
             </div>
           </div>
         </section>
