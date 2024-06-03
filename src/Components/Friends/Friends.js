@@ -33,7 +33,7 @@ function Friends() {
       </div>
       <div className="row">
         {friends
-          // .slice(0, 4)
+          .slice(3)
           .map((friend) =>
             friend.isFriends === true ? (
               <FriendsCard key={friend.fId} friends={friend} />
