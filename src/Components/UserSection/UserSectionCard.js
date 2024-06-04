@@ -7,10 +7,10 @@ function UserSectionCard(props) {
     <div className="row">
       <div className="col text-center">
         <section>
-          <h3 className="user-username col-2 offset-5">{user.userName}</h3>
+          <img src={user.img} alt={user.imgAlt} className="user-img" />
         </section>
         <section>
-          <img src={user.img} alt={user.imgAlt} className="user-img" />
+          <h3 className="user-username col-2 offset-5">{user.userName}</h3>
         </section>
         <section className="about-me col-6 offset-3">
           <h5>About Me:</h5>

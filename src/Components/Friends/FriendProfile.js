@@ -11,13 +11,24 @@ export default function FriendProfile(props) {
   // ***** functions ***** //
 
   // ***** methods ***** //
-  const userInfo = friends.find(friend => friend.fId === id)
+  const userInfo = friends.find((friend) => friend.fId === id);
 
   return (
     <div className="container text-center">
-      <h1>{userInfo.fName}</h1>
-      <img src={userInfo.fImg} alt={userInfo.alt} className="userInfo-profile-img" />
-      <p>{userInfo.aboutMe}</p> 
+      <section className="friend-name-section">
+        <h3>{userInfo.fName}</h3>
+      </section>
+      <section className="friend-img-section">
+        <img
+          src={userInfo.fImg}
+          alt={userInfo.alt}
+          className="userInfo-profile-img"
+        />
+      </section>
+      <hr />
+      <section className="friend-about-section">
+        <p className="friend-about-me">{userInfo.aboutMe}</p>
+      </section>
     </div>
   );
 }
