@@ -3,6 +3,10 @@ import React, { useState } from "react";
 function HatSubmitForm() {
   const [selectedImage, setSelectedImage] = useState(null);
 
+  const submitHat = (e) => {
+    e.preventDefault();
+  }
+
   return (
     <div className="hat-submit container text-center">
       <div className="row">
@@ -47,7 +51,7 @@ function HatSubmitForm() {
               </select>
             </div>
             <br />
-            <button className="btn btn-primary">Submit</button>
+            <button className="btn btn-primary" onClick={submitHat}>Submit</button>
           </form>
         </section>
       </div>

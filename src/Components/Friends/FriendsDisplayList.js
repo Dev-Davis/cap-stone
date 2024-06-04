@@ -6,21 +6,24 @@ export default function FriendsDisplayList(props) {
   const friend = props.friend;
   const profilePath = `/profile/${friend.fId}`;
 
+  console.log(props)
+
   return (
-    <div className="col-4">
+    <div className="col">
+      <hr />
       <section className="user-friend-section">
-        <Link to={profilePath}>
-          <section className="user-header">
+        <section className="user-header">
+          <Link to={profilePath}>
             <img
               src={props.friend.fImg}
               className="friend-list-img"
               alt={props.friend.alt}
             />
-          </section>
-          <section className="user-header">
-            <h5 className="friend-name-display">{props.friend.fName}</h5>
-          </section>
-        </Link>
+          </Link>
+        </section>
+        <section className="user-header">
+          <h5 className="friend-name-display">{props.friend.fName}</h5>
+        </section>
       </section>
       <hr />
     </div>
