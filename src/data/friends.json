@@ -5,7 +5,7 @@
     "fName": "Eric",
     "isFriends": true,
     "alt": "Eric's picture",
-    "aboutMe": "Here's a little bit about me"
+    "aboutMe": "Here's a little bit about Eric"
   },
   {
     "fId": "02",
@@ -13,7 +13,7 @@
     "fName": "Jennifer",
     "isFriends": true,
     "alt": "Jennifer's picture",
-    "aboutMe": "Here's a little bit about me"
+    "aboutMe": "Here's a little bit about Jennifer"
   },
   {
     "fId": "03",
@@ -21,7 +21,7 @@
     "fName": "Christina",
     "isFriends": false,
     "alt": "Christina's picture",
-    "aboutMe": "Here's a little bit about me"
+    "aboutMe": "Here's a little bit about Christina"
   },
   {
     "fId": "04",
@@ -29,7 +29,7 @@
     "fName": "Trevor",
     "isFriends": true,
     "alt": "Trevor's picture",
-    "aboutMe": "Here's a little bit about me"
+    "aboutMe": "Here's a little bit about Trevor"
   },
   {
     "fId": "05",
@@ -37,7 +37,7 @@
     "fName": "Esteban",
     "isFriends": false,
     "alt": "Esteban's picture",
-    "aboutMe": "Here's a little bit about me"
+    "aboutMe": "Here's a little bit about Esteban"
   },
   {
     "fId": "06",
@@ -45,7 +45,7 @@
     "fName": "Amber",
     "isFriends": true,
     "alt": "Amber's picture",
-    "aboutMe": "Here's a little bit about me"
+    "aboutMe": "Here's a little bit about Amber"
   },
   {
     "fId": "07",
@@ -53,7 +53,7 @@
     "fName": "Ava",
     "isFriends": false,
     "alt": "Ava's picture",
-    "aboutMe": "Here's a little bit about me"
+    "aboutMe": "Here's a little bit about Ava"
   },
   {
     "fId": "08",
@@ -62,7 +62,7 @@
     "fName": "Tia",
     "isFriends": true,
     "alt": "Tia's picture",
-    "aboutMe": "Here's a little bit about me"
+    "aboutMe": "Here's a little bit about Tia"
   },
   {
     "fId": "09",
@@ -70,6 +70,6 @@
     "fName": "RomaArmy",
     "isFriends": true,
     "alt": "Roma's picture",
-    "aboutMe": "Here's a little bit about me"
+    "aboutMe": "Here's a little bit about RomaArmy"
   }
 ]

@@ -1,7 +1,6 @@
 import React from "react";
 
-import { Link, useParams } from "react-router-dom";
-import FriendProfile from "./FriendProfile";
+import { Link } from "react-router-dom";
 
 export default function FriendsCard(props) {
   const friend = props.friends;

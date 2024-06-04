@@ -20,7 +20,6 @@ const friends = require("./data/friends.json");
 function App() {
   // ***** varibles ***** //
   let [user, setUser] = useState(false);
-  const id = useParams();
 
   // ***** functions ***** //
   const userLogging = () => {
@@ -28,7 +27,7 @@ function App() {
   }
 
     // ***** methods ***** //
-    // const singleUser = friends.filter((x) => x.fId === '06')
+  
 
   return (
     <div className="App">
@@ -40,7 +39,7 @@ function App() {
           <Route exact path="/profile/:id" element={<FriendProfile friends={friends} />} />
           <Route exact path="/login" element={Login} />
           <Route exact path="/signup" element={Signup} />
-          <Route exact path="/friends" element={<FriendsDisplay />} />
+          <Route exact path="/friends" element={<FriendsDisplay friends={friends} />} />
         </Routes>
       </BrowserRouter>
     </div>
