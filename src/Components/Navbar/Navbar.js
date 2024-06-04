@@ -3,8 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
-
-  const user = props.user
+  const user = props.user;
   const loggedInNav = () => {
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -46,12 +45,12 @@ export default function Navbar(props) {
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link className="dropdown-item" href="#">
+                    <Link to="/account" className="dropdown-item">
                       Account
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" href="#">
+                    <Link to="/settings" className="dropdown-item">
                       Settings
                     </Link>
                   </li>
@@ -59,7 +58,7 @@ export default function Navbar(props) {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <Link className="dropdown-item" href="#">
+                    <Link to="/login" className="dropdown-item">
                       Logout
                     </Link>
                   </li>
@@ -67,12 +66,11 @@ export default function Navbar(props) {
               </li>
             </ul>
             <Link
-              to="login"
               className="nav-link logout"
               href="#"
               tabIndex="-1"
               aria-disabled="true"
-              onClick={props.userLogging} 
+              onClick={props.userLogging}
             >
               Logout
             </Link>
@@ -88,24 +86,20 @@ export default function Navbar(props) {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <div className="navbar-brand">CapStone</div>
-            <Link
-              to="/"
-              className="nav-link logout"
-              href="#"
-              tabIndex="-1"
-              aria-disabled="true"
-              onClick={props.userLogging}
-            >
-              Login
-            </Link>
-          </div>
+          <Link
+            to="/"
+            className="nav-link logout"
+            href="#"
+            tabIndex="-1"
+            aria-disabled="true"
+            onClick={props.userLogging}
+          >
+            Login
+          </Link>
+        </div>
       </nav>
     );
   };
 
-  return (
-    <div>
-     {!user === false ? loggedInNav() : loggedOutNav()}
-    </div>
-  );
+  return <div>{!user === false ? loggedInNav() : loggedOutNav()}</div>;
 }
