@@ -13,6 +13,8 @@ import FriendProfile from "./Components/Friends/FriendProfile";
 
 // ***** CSS ***** //
 import "./App.css";
+import Account from "./Components/Account/Account";
+import Settings from "./Components/Settings/Settings";
 
 // ***** data imports ***** //
 const friends = require("./data/friends.json");
@@ -35,10 +37,12 @@ function App() {
         <Navbar  userLogging={userLogging} user={user} />
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/account" element={<Account />} />
+          <Route exact path="/settings" element={<Settings />} />
           <Route exact path="/profile" element={<Profile />} />
           <Route exact path="/profile/:id" element={<FriendProfile friends={friends} />} />
-          <Route exact path="/login" element={Login} />
-          <Route exact path="/signup" element={Signup} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/signup" element={<Signup />} />
           <Route exact path="/friends" element={<FriendsDisplay friends={friends} />} />
         </Routes>
       </BrowserRouter>
