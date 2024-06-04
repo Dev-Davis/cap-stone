@@ -1,19 +1,21 @@
-import React from 'react'
+import React from "react";
+import { useParams } from "react-router-dom";
 
-const friends = require("../../data/friends.json");
+// const friends = require("../../data/friends.json");
 
-export default function FriendProfile() {
-  // ***** methods ***** //
-  const singleUser = friends.filter((x) => x.fId === '06')
-
+export default function FriendProfile(props) {
   // ***** variables ***** //
-  const solo = singleUser[0];
+  const friends = props.friends;
+  const { id } = useParams();
+
+  // ***** methods ***** //
+  const userInfo = friends.find(friend => friend.fId === id)
 
   return (
     <div className="container text-center">
-      <h1>{solo.fName}</h1>
-      <img src={solo.fImg} alt={solo.alt} className="solo-profile-img" />
-      <p>{solo.aboutMe}</p> 
+      <h1>{userInfo.fName}</h1>
+      <img src={userInfo.fImg} alt={userInfo.alt} className="userInfo-profile-img" />
+      <p>{userInfo.aboutMe}</p> 
     </div>
-  )
+  );
 }
