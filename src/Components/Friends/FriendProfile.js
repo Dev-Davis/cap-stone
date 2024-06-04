@@ -8,6 +8,8 @@ export default function FriendProfile(props) {
   const friends = props.friends;
   const { id } = useParams();
 
+  // ***** functions ***** //
+
   // ***** methods ***** //
   const userInfo = friends.find(friend => friend.fId === id)
 

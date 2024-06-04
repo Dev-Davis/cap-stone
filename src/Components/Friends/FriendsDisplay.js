@@ -1,9 +1,11 @@
 import React from "react";
 import FriendsDisplayList from "./FriendsDisplayList";
 
-const friends = require("../../data/friends.json");
+// const friends = require("../../data/friends.json");
 
-export default function FriendsDisplay() {
+export default function FriendsDisplay(props) {
+  // ***** variables ***** //
+  const friends = props.friends;
 
   return (
     <div className="friends-display-section container text-center">

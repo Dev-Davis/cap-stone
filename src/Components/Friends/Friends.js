@@ -18,8 +18,6 @@ function Friends() {
 
     const count = getFriends.filter(Boolean).length;
 
-    console.log(count)
-
   return (
     <div className="friends container text-center">
       <div className="row">
