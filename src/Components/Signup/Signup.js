@@ -1,50 +1,38 @@
 import React from "react";
-import { Button, Form } from "react-bootstrap";
-
-// import "firebase/auth";
-// import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
-
-// // ***** signup ***** //
-// const auth = getAuth();
-// createUserWithEmailAndPassword(auth)
-//   .then((userCredential) => {
-//     // Signed up 
-//     const user = userCredential.user;
-    
-//   })
-//   .catch((error) => {
-//     const errorCode = error.code;
-//     const errorMessage = error.message;
-//     // ..
-//   });
-
+import { Link } from 'react-router-dom'
 
 function Signup() {
+
+  const signupUser = (e) => {
+    e.preventDefault();
+
+    console.log("user signed up...");
+  };
+
   return (
     <div className="Auth text-center">
-      <h1 className="signup-title">This is CAPstone</h1>
-      <p>Where hat lovers unite</p>
-      <hr />
-      <Form className="col-4 offset-4">
-        <Form.Group controlId="formGroupEmail">
-          <Form.Label>Choose and Email address</Form.Label>
-          <br />
-          <Form.Control type="email" placeholder=" Enter email..." />
-        </Form.Group>
-        <Form.Group controlId="formGroupPassword">
-          <Form.Label>Choose a Password</Form.Label>
-          <br />
-          <Form.Control type="password" placeholder=" Password..." />
-        </Form.Group>
-        <Form.Group controlId="formGroupPassword">
-          <Form.Label>Confirm Password</Form.Label>
-          <br />
-          <Form.Control type="password" placeholder=" Password..." />
-        </Form.Group>
-      </Form>
-      <p> or </p>
-      <Button className="btn btn-primary">Login with Google</Button>
-      {/* <Link className="btn btn-dark" to={SignUpLink} onClick={this.newUser}>SignUp</Link> */}
+      <h1 className="text-center">Sign Up for Cap-stone</h1>
+      <div className="row">
+        <div className="signup col-6 offset-3 text-center">
+          <form>
+            <label htmlFor="username">Username:</label>
+            <br />
+            <input type="text" name="username" placeholder=" Username..." />
+            <br />
+            <br />
+            <label htmlFor="password">Password:</label>
+            <br />
+            <input type="password" name="password" placeholder=" Password..." />
+            <br />
+            <br />
+            <Link to="/">
+              <button className="btn btn-light" onClick={signupUser}>
+                Signup
+              </button>
+            </Link>
+          </form>
+        </div>
+      </div>
     </div>
   );
 }

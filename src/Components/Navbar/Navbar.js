@@ -66,6 +66,7 @@ export default function Navbar(props) {
               </li>
             </ul>
             <Link
+              to="/login"
               className="nav-link logout"
               href="#"
               tabIndex="-1"
@@ -94,7 +95,7 @@ export default function Navbar(props) {
             aria-disabled="true"
             onClick={props.userLogging}
           >
-            Login
+            {!user ? "Login" : "Logout"}
           </Link>
         </div>
       </nav>
