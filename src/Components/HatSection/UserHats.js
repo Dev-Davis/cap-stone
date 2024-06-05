@@ -6,10 +6,12 @@ function UserHats(props) {
   const hats = props.hats;
   const user = props.user;
 
+  console.log(user)
+
   return (
     <div className="container">
       <section className="hat-title-section">
-        <h3 className="all-hats-title text-center">Hats</h3>
+        <h3 className="all-hats-title text-center">{user.userName}'s Hats</h3>
       </section>
       <section className="all-hats-section">
         <div className="row">
