@@ -18,14 +18,15 @@ p {
 .user-img {
   height: 10em;
   border: 1px solid black;
-  border-radius: 50%;margin-bottom: 1em;
+  border-radius: 50%;
+  margin-bottom: 1em;
   margin-top: 1em;
 }
 
 .hat-card {
   border: 1px solid black;
   margin: 1em;
-  width:13em;
+  width: 13em;
   background-color: black;
   /* color: white; */
   padding: 1em;
@@ -109,6 +110,16 @@ p {
   border-radius: 50%;
 }
 
+/* .comment-title {
+  display: flex;
+  padding: 0;
+} */
+
+.comment-section {
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .input-title {
   display: flex;
   align-items: center;
@@ -170,7 +181,6 @@ p {
 }
 
 .hat-type-dropdown {
-
 }
 
 .submission-form {
@@ -204,6 +214,27 @@ p {
   align-items: baseline;
 }
 
+.comment-btn {
+  border-radius: 1em;
+  background-color: black;
+  color: white;
+  margin: 0 0 0 13px;
+}
+
+.comment-section {
+  padding: 0;
+}
+
+.reaction-button {
+  border: none;
+  background-color: white;
+  font-size: 12px;
+}
+
+.reactions {
+  display: flex;
+}
+
 .home-search {
   margin: 0.6em;
 }
@@ -219,14 +250,14 @@ p {
 .friend-list-pics {
   height: 6em;
   width: 6em;
-  border-radius:  50%;
+  border-radius: 50%;
   border: 2px solid black;
 }
 
 .friend-list-pics:hover {
   height: 6em;
   width: 6em;
-  border-radius:  50%;
+  border-radius: 50%;
   border: 2px solid red;
   cursor: pointer;
 }
@@ -288,6 +319,11 @@ p {
 .user-friend-section {
   display: flex;
   align-items: center;
+  border: 1px solid black;
+  padding: 1em;
+  width: 16em;
+  margin: 1em;
+  border-radius: 1em;
 }
 
 .friend-name-section {
@@ -302,9 +338,9 @@ p {
 }
 
 .userInfo-profile-img {
- height: 8em;
- width: 10em;
- border-radius: 2em;
+  height: 8em;
+  width: 10em;
+  border-radius: 2em;
 }
 
 .hat-section {
@@ -325,7 +361,8 @@ p {
   z-index: 1;
 }
 
-.login, .signup {
+.login,
+.signup {
   border: 1px solid black;
   padding: 2em;
   background-color: white;

@@ -14,7 +14,7 @@ function HatSectionCard(props) {
   const handleShow = () => {
     cap = hatsArray.find(({ hatId }) => hatId === hats.hatId);
     
-    setCap(cap);
+    // setCap(cap);
     setShow(true);
   };
 
@@ -35,12 +35,9 @@ function HatSectionCard(props) {
       
       {/* Modal */}
       <br />
-      {/* <Button variant="dark" className="show-detail-btn" onClick={handleShow}>
-        Show Details
-      </Button> */}
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>{cap.name}</Modal.Title>
+          <Modal.Title>{hats.name}</Modal.Title>
         </Modal.Header>
 
         <Modal.Body>

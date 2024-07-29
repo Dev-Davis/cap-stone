@@ -13,9 +13,12 @@ function Friends(props) {
     ) : null
   );
 
+  
   const count = getFriends.filter(Boolean).length;
-
+  
   const user = props.user[0];
+  
+  const friendPath = `/user/${user.userId}/friends`;
 
   return (
     <div className="friends container text-center">
@@ -40,7 +43,7 @@ function Friends(props) {
           )}
       </div>
       <div className="row">
-        <Link to="/user/friends" className="friend-link">
+        <Link to={friendPath} className="friend-link">
           View all friends...
         </Link>
       </div>

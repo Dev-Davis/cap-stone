@@ -6,8 +6,6 @@ function UserHats(props) {
   const hats = props.hats;
   const user = props.user;
 
-  console.log(user)
-
   return (
     <div className="container">
       <section className="hat-title-section">

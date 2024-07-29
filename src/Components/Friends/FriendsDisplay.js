@@ -8,15 +8,14 @@ export default function FriendsDisplay(props) {
   const friends = props.friends;
   const user = props.user;
 
-  console.log(props);
-
   return (
     <div className="container text-center">
       <h1>{user.userName}'s Display</h1>
       <div className="row all-friends">
+        {/* The full friend list */}
         {friends.map((friend) =>
           friend.isFriends === true ? (
-            <FriendsDisplayList key={friend.fId} friend={friend} />
+            <FriendsDisplayList key={friend.fId} friend={friend} props={props} />
           ) : null
         )}
       </div>

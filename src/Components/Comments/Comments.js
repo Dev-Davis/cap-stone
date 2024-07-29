@@ -25,28 +25,26 @@ function Comments(props) {
 
   return (
     <div className="comments container-fluid">
-      <section className="comment-body">
-        <div className="row">
-          <div className="input-title">
-            <section className="leave-comment-section">
-            <label for="hat-comment" className="comment-title">Comment?</label>
-            </section>
-          </div>
-        </div>
-        <div className="row">
-          <section className="comment-section">
-            <input
-              type="textarea"
-              id="hat-comment"
-              className="comment-input col"
-              placeholder=" Talk about this hat..."
-              // value={e.target.value}
-            />
-          </section>
-        </div>
-      </section>
+      <div className="row">
+        <section className="comment-section col">
+          <label for="hat-comment" className="comment-title col">
+            Comment?
+          </label>
+          <input
+            type="textarea"
+            id="hat-comment"
+            className="comment-input col-7"
+            placeholder=" Talk about this hat..."
+            // value={e.target.value}
+          />
+          <button className="comment-btn col">Comment</button>
+        </section>
+      </div>
+      
       <hr span="separator" />
-      <section className="comment-reader">{getComments()}</section>
+      <div className="show-comments">
+        <section className="comment-reader">{getComments()}</section>
+      </div>
     </div>
   );
 }

@@ -2,8 +2,12 @@ import React from "react";
 import HatSectionCard from "./HatSectionCard";
 import { Link } from "react-router-dom";
 
-function HatSection() {
+function HatSection(props) {
   const hats = require("../../data/hats.json");
+
+  const user = props.user[0];
+
+  const hatsPath = `/user/${user.userId}/all-hats`;
 
   return (
     <div className="container hat-section">
@@ -20,7 +24,7 @@ function HatSection() {
         </div>
       </section>
       <section className="view-all-hats text-center">
-        <Link to="/all-hats/user">
+        <Link to={hatsPath}>
           <p className="all-hats-text">View all hats...</p>
         </Link>
       </section>

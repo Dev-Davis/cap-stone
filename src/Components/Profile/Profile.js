@@ -26,7 +26,7 @@ function Profile() {
       </div>
       <div className="row">
         <div className="col">
-          <HatSection />
+          <HatSection user={oUser} />
         </div>
       </div>
     </div>

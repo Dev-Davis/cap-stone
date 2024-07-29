@@ -3,6 +3,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
+
+  const urlId = props.user[0].userName;
+
+  const profilePath = `/user/${urlId}`
+
   const user = props.user;
   const loggedInNav = () => {
     return (
@@ -28,7 +33,7 @@ export default function Navbar(props) {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/profile">
+                <Link className="nav-link" to={profilePath}>
                   Profile
                 </Link>
               </li>
