@@ -29,12 +29,10 @@ function App() {
   // ***** functions ***** //
   const userLogging = () => {
     setUser(!user);
+    console.log(user)
   };
 
   const uName = oUser.find((user) => user.userId === "01");
-
-  const { id } = useParams();
-  console.log({id})
 
   return (
     <div className="App">
@@ -47,11 +45,11 @@ function App() {
           <Route
             exact
             path="/user/:name"
-            element={<Profile friends={friends} user={uName} />}
+            element={<Profile friends={friends} user={uName} auth={user} />}
           />
           <Route
             exact
-            path="/user/:id"
+            path="/user/friend/:id"
             element={<FriendProfile friends={friends} />}
           />
           <Route exact path="/login" element={<Login />} />

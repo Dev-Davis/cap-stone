@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 
 export default function FriendsCard(props) {
   const friend = props.friends;
-  const profilePath = `/profile/${friend.fId}`;
+  const profilePath = `/user/friend/${friend.fId}`;
+
+  console.log(props)
 
   return (
     <div className="friend-card-border col-3">

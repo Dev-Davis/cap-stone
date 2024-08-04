@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 export default function Navbar(props) {
 
   const urlId = props.user[0].userName;
-
   const profilePath = `/user/${urlId}`
-
   const user = props.user;
+  
   const loggedInNav = () => {
+    
     return (
       <nav className="navbar navbar-fixed-top navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
@@ -71,16 +71,15 @@ export default function Navbar(props) {
               </li>
             </ul>
             <Link
-              to="/login"
+              to="/"
               className="nav-link logout"
               href="#"
               tabIndex="-1"
               aria-disabled="true"
               onClick={props.userLogging}
             >
-              Logout
+              Login
             </Link>
-            {/* </li> */}
           </div>
         </div>
       </nav>
@@ -107,5 +106,5 @@ export default function Navbar(props) {
     );
   };
 
-  return <div>{!user === false ? loggedInNav() : loggedOutNav()}</div>;
+  return <div>{user !== !user ? loggedInNav() : loggedOutNav()}</div>;
 }
