@@ -6,7 +6,7 @@ export default function FriendsDisplayList(props) {
   const friend = props.friend;
 
   console.log(friend)
-  const profilePath = `/user/${friend.fId}`;
+  const profilePath = `/user/friend/${friend.fId}`;
 
   return (
     <div className="col-4 text-center">
