@@ -10,7 +10,7 @@ function HatSubmitForm() {
   return (
     <div className="hat-submit container text-center">
       <div className="row">
-        <section className="submission-form col-6 offset-3">
+        <section className="submission-form col-8 offset-2">
           <h5>Add to your collection!!!</h5>
           <form>
           <hr />
@@ -27,12 +27,18 @@ function HatSubmitForm() {
             <p className="for-input">Enter hat name</p>
             <input className="hat-title" placeholder="  Enter name..." />
             <br />
-            <p className="for-input">Enter hat description</p>
+            <br />
+
+            <p className="for-input">Enter hat color</p>
             <input className="hat-title" placeholder="  Enter main color..." />
             <br />
-            <p className="for-input">Enter hat color</p>
+            <br />
+
+            <p className="for-input">Enter hat description</p>
             <input className="hat-title" placeholder="  Enter description..." />
             <br />
+            <br />
+
             {/* <p>Enter hat name</p> */}
             <div className="ui container text-center selection-type">
               <select

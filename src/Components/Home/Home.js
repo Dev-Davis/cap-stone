@@ -10,25 +10,25 @@ export default function Home() {
         </p>
       </section>
       <hr />
-      <section>
+      <section className="container">
         <section className="search-tite  text-center">
         <p className="search-text">Find your favorite hat:</p>
         </section>
-        <section className="home-search">
-          <form class="d-flex">
+        <section className="home-search ">
+          <form className="d-flex">
             <input
-              class="form-control me-2"
+              className="form-control me-2"
               type="search"
               placeholder="Search....."
               aria-label="Search"
             />
-            <button class="btn btn-outline-dark" type="submit">
+            <button className="btn btn-outline-dark" type="submit">
               Search
             </button>
           </form>
         </section>
       </section>
-      <hr />
+      {/* <hr /> */}
       <section>
         
       </section>

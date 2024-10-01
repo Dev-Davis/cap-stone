@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import { Link } from "react-router-dom";
 
-export default function Navbar(props) {
+import { AuthState } from "../../App";
 
-  const urlId = props.user[0].userName;
-  const profilePath = `/user/${urlId}`
-  const user = props.user;
-  
+export default function Navbar() {
+  // const urlId = props.user[0].userName;
+  // const profilePath = `/user/${urlId}`;
+  // const user = props.user;
+
+  const [loggedIn, setLoggedIn] = useContext(AuthState);
+
   const loggedInNav = () => {
-    
     return (
       <nav className="navbar navbar-fixed-top navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
@@ -33,7 +35,7 @@ export default function Navbar(props) {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={profilePath}>
+                <Link className="nav-link" to='/profile'>
                   Profile
                 </Link>
               </li>
@@ -71,14 +73,14 @@ export default function Navbar(props) {
               </li>
             </ul>
             <Link
-              to="/"
+              to="/login"
               className="nav-link logout"
               href="#"
               tabIndex="-1"
               aria-disabled="true"
-              onClick={props.userLogging}
+              onClick={() => setLoggedIn(!loggedIn)}
             >
-              Login
+              Logout
             </Link>
           </div>
         </div>
@@ -97,14 +99,14 @@ export default function Navbar(props) {
             href="#"
             tabIndex="-1"
             aria-disabled="true"
-            onClick={props.userLogging}
+            onClick={() => setLoggedIn(!loggedIn)}
           >
-            {!user ? "Login" : "Logout"}
+            Login
           </Link>
         </div>
       </nav>
     );
   };
 
-  return <div>{user !== !user ? loggedInNav() : loggedOutNav()}</div>;
+  return <div>{loggedIn ? loggedInNav() : loggedOutNav()}</div>;
 }

@@ -22,7 +22,7 @@ function HatSectionCard(props) {
   const hatsArray = require("../../data/hats.json");
 
   return (
-    <div className="col hat-card text-center">
+    <div className="col-3 hat-card text-center">
       <div className="text-center">
         <div className="card">
           <div className="card-body">

@@ -7,29 +7,36 @@ import HatSubmitForm from "../HatSubmitForm/HatSubmitForm";
 const oUser = require("../../data/user.json");
 
 function Profile(props) {
-
-  console.log(props)
+  // console.log(props)
 
   return (
     <div className="profile container">
       <div className="row">
-        <div className="col">
+        <div className="col col-sm-12 text-center">
           <UserSection />
         </div>
-      </div><div className="row">
-        <div className="col">
-          <HatSubmitForm />
+      </div>
+      <div className="hat-submit-border">
+        <div className="row">
+          <div className="col">
+            <HatSubmitForm />
+          </div>
         </div>
       </div>
-      
+      <br />
+      <br />
+
       <div className="row">
         <div className="col-6 offset-3">
-          <Friends user={oUser} />
+          <Friends />
         </div>
       </div>
+      <br />
+      <br />
+
       <div className="row">
         <div className="col">
-          <HatSection user={oUser} />
+          <HatSection />
         </div>
       </div>
     </div>
