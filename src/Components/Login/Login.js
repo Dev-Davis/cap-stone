@@ -1,17 +1,15 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 
-export default function Login() {
-  const loginUser = (e) => {
-    e.preventDefault();
+export default function Login(props) {
+  
+  console.log(props)
 
-    console.log("user logged in...");
-  };
   return (
     <div className="container">
       <h1 className="text-center">Login to Cap-stone</h1>
       <div className="row">
-        <div className="login col-6 offset-3 text-center">
+        <div className="login col-lg-6 text-center">
           <form>
             <label htmlFor="username">Username:</label>
             <br />
@@ -24,7 +22,7 @@ export default function Login() {
             <br />
             <br />
             <Link to="/">
-              <button className="btn btn-light" onClick={loginUser}>
+              <button className="btn btn-light" onClick={props.userLogging}>
                 Login
               </button>
             </Link>

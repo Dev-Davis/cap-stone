@@ -13,7 +13,7 @@ function HatSection(props) {
     <div className="container hat-section">
       <h3 className="text-center">Top 3 Hats</h3>
       <section className="hat-holder">
-        <div className="row">
+        <div className="row justify-content-center">
           {hats
             .slice(0, 3)
             .map((hat) =>

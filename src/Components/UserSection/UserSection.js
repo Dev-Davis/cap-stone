@@ -2,7 +2,7 @@ import React from "react";
 import UserSectionCard from "./UserSectionCard";
 
 function UserSection() {
-  const users = require("../../data/user.json");
+  const users = require("../../data/user.json"); 
 
   return <div className="user-section container">
     {users.map((user) => (

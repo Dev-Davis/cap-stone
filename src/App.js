@@ -1,6 +1,6 @@
 // ***** react imports ***** //
-import { useState } from "react";
-import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
+import { createContext, useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // ***** component imports ***** //
 import Home from "./Components/Home/Home";
@@ -22,50 +22,58 @@ const friends = require("./data/friends.json");
 const oUser = require("./data/user.json");
 const hats = require("./data/hats.json");
 
+export const AuthState = createContext();
+
 function App() {
   // ***** varibles ***** //
-  let [user, setUser] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(false);
+  let [user, setUser] = useState(oUser[0].isLoggedIn);
 
   // ***** functions ***** //
   const userLogging = () => {
     setUser(!user);
-    console.log(user)
   };
 
   const uName = oUser.find((user) => user.userId === "01");
 
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navbar userLogging={userLogging} user={oUser} />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/account" element={<Account />} />
-          <Route exact path="/settings" element={<Settings />} />
-          <Route
-            exact
-            path="/user/:name"
-            element={<Profile friends={friends} user={uName} auth={user} />}
-          />
-          <Route
-            exact
-            path="/user/friend/:id"
-            element={<FriendProfile friends={friends} />}
-          />
-          <Route exact path="/login" element={<Login />} />
-          <Route exact path="/signup" element={<Signup />} />
-          <Route
-            exact
-            path="/user/:id/all-hats"
-            element={<UserHats hats={hats} user={uName} friends={friends} />}
-          />
-          <Route
-            exact
-            path="/user/:id/friends"
-            element={<FriendsDisplay friends={friends} user={uName} />}
-          />
-        </Routes>
-      </BrowserRouter>
+      <AuthState.Provider value={[loggedIn, setLoggedIn]}>
+        <BrowserRouter>
+          <Navbar userLogging={userLogging} user={oUser} />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/account" element={<Account />} />
+            <Route exact path="/settings" element={<Settings />} />
+            <Route
+              exact
+              path="/user/:name"
+              element={<Profile friends={friends} user={uName} auth={user} />}
+            />
+            <Route
+              exact
+              path="/user/friend/:id"
+              element={<FriendProfile friends={friends} />}
+            />
+            <Route
+              exact
+              path="/login"
+              element={<Login userLogging={userLogging} />}
+            />
+            <Route exact path="/signup" element={<Signup />} />
+            <Route
+              exact
+              path="/user/:id/all-hats"
+              element={<UserHats hats={hats} user={uName} friends={friends} />}
+            />
+            <Route
+              exact
+              path="/user/:id/friends"
+              element={<FriendsDisplay friends={friends} user={uName} />}
+            />
+          </Routes>
+        </BrowserRouter>
+      </AuthState.Provider>
     </div>
   );
 }

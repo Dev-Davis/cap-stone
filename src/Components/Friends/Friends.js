@@ -27,7 +27,7 @@ function Friends(props) {
       <div className="row">
         <p>
           You have
-          <Link to="/user/friends" className="friend-link">
+          <Link to={friendPath} className="friend-link">
             <span className="friend-count"> {count} </span>
           </Link>
           friends
