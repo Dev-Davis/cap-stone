@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from 'react-router-dom'
 
-export default function Login(props) {
+import { AuthState } from "../../App";
+
+export default function Login() {
   
-  console.log(props)
+  const [loggedIn, setIsLoggedIn] = useContext(AuthState);
 
   return (
     <div className="container">
-      <h1 className="text-center">Login to Cap-stone</h1>
+      <h4 className="text-center">Welcome back to</h4>
+      <h1 className="text-center">Cap-stone</h1>
+
       <div className="row">
-        <div className="login col-lg-6 text-center">
+        <div className="login-container col-6 offset-3 text-center">
           <form>
             <label htmlFor="username">Username:</label>
             <br />
@@ -22,7 +26,7 @@ export default function Login(props) {
             <br />
             <br />
             <Link to="/">
-              <button className="btn btn-light" onClick={props.userLogging}>
+              <button className="btn btn-light" onClick={() => setIsLoggedIn(!loggedIn)}>
                 Login
               </button>
             </Link>
